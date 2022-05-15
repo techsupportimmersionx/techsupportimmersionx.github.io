@@ -1,35 +1,10 @@
-/* Generated on: Wed Apr 13 2022 13:47:11 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Sun May 15 2022 07:40:15 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
    ========================================================================== */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
-@font-face {
-	font-family: "Helveticaneuelt";
-	/* src: url("https://uploads-ssl.webflow.com/6256b3402dd068c8e7edfba5/6256c949914be24f361aaf3a_HelveticaNeueLT-Thin.ttf") format("truetype"); */
-	src: url("/font/HelveticaNeueLT-Thin.ttf") format("truetype");
-	font-weight: 100;
-	font-style: normal;
-	font-display: swap;
-}
-/* @font-face {
-	font-family: "HelveticaneueltBold";
-	src: url("/font/HelveticaNeueBold.ttf") format("truetype");
-	font-weight: 700;
-	font-style: bold;
-	font-display: swap;
-} */
-
-@font-face {
-	font-family: "HelveticaneueltBold";
-	src: url("/font/HelveticaNeue-Black.otf") format("opentype");
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
-}
-
 html {
-	font-family: "HelveticaneueltBold", sans-serif;
+	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
@@ -205,9 +180,9 @@ th {
 }
 
 /* ==========================================================================
-   Start of base CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
+   Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
    ========================================================================== */
-/* @font-face {
+@font-face {
 	font-family: "webflow-icons";
 	src: url("data:application/x-font-ttf;charset=utf-8;base64,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")
 		format("truetype");
@@ -244,7 +219,7 @@ th {
 }
 .w-icon-file-upload-icon:before {
 	content: "\e903";
-}*/
+}
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -257,7 +232,7 @@ body {
 	margin: 0;
 	min-height: 100%;
 	background-color: #fff;
-	font-family: "HelveticaneueltBold", Arial, sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 14px;
 	line-height: 20px;
 	color: #333;
@@ -309,16 +284,7 @@ input.w-button {
 html[data-w-dynpage] [data-w-cloak] {
 	color: transparent !important;
 }
-
-.text-block-7 sup {
-	font-size: 25px;
-}
-
-.text-block-5 sup {
-	font-size: 12px;
-}
-
-/* .w-webflow-badge,
+.w-webflow-badge,
 .w-webflow-badge * {
 	position: static;
 	left: auto;
@@ -411,7 +377,7 @@ html[data-w-dynpage] [data-w-cloak] {
 	visibility: visible !important;
 	opacity: 1 !important;
 	vertical-align: middle !important;
-} */
+}
 h1,
 h2,
 h3,
@@ -1135,6 +1101,16 @@ textarea.w-select {
 .w-background-video > video::-webkit-media-controls-start-playback-button {
 	display: none !important;
 	-webkit-appearance: none;
+}
+.w-background-video--control {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	background-color: transparent;
+	padding: 0;
+}
+.w-background-video--control > [hidden] {
+	display: none !important;
 }
 .w-slider {
 	position: relative;
@@ -1957,9 +1933,15 @@ textarea.w-select {
 .w-condition-invisible {
 	display: none !important;
 }
+.wf-layout-layout {
+	display: grid !important;
+}
+.wf-layout-cell {
+	display: flex !important;
+}
 
 /* ==========================================================================
-   Start of custom CSS
+   Start of custom Webflow CSS
    ========================================================================== */
 .section {
 	display: -webkit-box;
@@ -2094,8 +2076,8 @@ textarea.w-select {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	height: 75vh;
-	padding-top: 90px;
+	height: 80vh;
+	padding-top: 150px;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
@@ -2113,13 +2095,15 @@ textarea.w-select {
 	-webkit-order: -1;
 	-ms-flex-order: -1;
 	order: -1;
-	font-family: Helveticaneuelt, sans-serif;
+	font-family: Helveticaneuelt;
 	font-size: 50px;
 	line-height: 50px;
 }
 
-.text-block-4 {
-	margin-bottom: 40px;
+.headertext {
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 10px;
 	-webkit-align-self: flex-start;
 	-ms-flex-item-align: start;
 	align-self: flex-start;
@@ -2127,10 +2111,17 @@ textarea.w-select {
 	-webkit-order: 2;
 	-ms-flex-order: 2;
 	order: 2;
-	font-family: HelveticaneueltBold, sans-serif;
-	font-size: 50px;
-	line-height: 70px;
-	font-weight: 700;
+	font-family: Raleway, sans-serif;
+	color: #fff;
+	font-size: 80px;
+	line-height: 80px;
+	font-style: normal;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+.headertext.headerbold {
+	font-weight: 600;
 }
 
 .footer {
@@ -2207,28 +2198,25 @@ textarea.w-select {
 	display: flex;
 }
 
-.footer-div {
-	font-family: Helveticaneuelt, sans-serif;
-	font-size: 20px;
-}
-
 .text-block-5 {
 	height: 100%;
-	font-family: HelveticaneueltBold, sans-serif;
-	font-size: 20px;
-	font-weight: 700;
-	display: inline;
+	font-family: Raleway, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
 }
 
 .text-block-6 {
+	padding-top: 0px;
+	padding-bottom: 10px;
 	-webkit-box-ordinal-group: 4;
 	-webkit-order: 3;
 	-ms-flex-order: 3;
 	order: 3;
-	font-family: Helveticaneuelt, sans-serif;
-	font-size: 50px;
+	font-family: Raleway, sans-serif;
+	color: #fff;
+	font-size: 18px;
 	line-height: 50px;
-	font-weight: 100;
+	font-weight: 300;
 }
 
 .container-5 {
@@ -2248,7 +2236,7 @@ textarea.w-select {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	height: 20vh;
+	height: 15vh;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
@@ -2265,43 +2253,117 @@ textarea.w-select {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	padding-right: 90px;
-	padding-left: 90px;
+	padding-right: 220px;
+	padding-left: 220px;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	background-color: #fdffc6;
+	background-color: rgba(11, 4, 30, 0.6);
+	font-family: Raleway, sans-serif;
 }
 
-.text-block-7 {
-	font-family: HelveticaneueltBold, sans-serif;
+.text-block-1 {
+	font-family: Raleway, sans-serif;
 	font-size: 50px;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 .link {
-	font-family: Helveticaneuelt, sans-serif;
+	font-family: Helveticaneuelt;
 	font-size: 50px;
 }
 
 .link-2 {
-	font-family: Helveticaneuelt, sans-serif;
+	font-family: Helveticaneuelt;
 }
 
 .body {
-	color: #333;
+	background-image: url("https://uploads-ssl.webflow.com/627fb40c1509473e97034d0c/627fbce057254f83993492a4_tron_pc_09_1300px.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-attachment: scroll;
+	color: #fff;
 }
 
 .resetlink {
-	font-family: Helveticaneuelt, sans-serif;
-	color: #333;
-	font-size: 30px;
+	font-family: Raleway, sans-serif;
+	color: #fff;
+	font-size: 16px;
 	font-style: normal;
-	font-weight: 100;
+	font-weight: 600;
 	text-align: right;
 	text-decoration: none;
+
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-iteration-count: 1;
+}
+
+.resetlink:hover {
+	color: #dd5753;
+}
+
+.resetlink:hover {
+	animation-name: rubberBand;
+}
+
+@keyframes rubberBand {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+.rubberBand {
+	-webkit-animation-name: rubberBand;
+	animation-name: rubberBand;
+}
+
+.bold-text {
+	text-transform: none;
+}
+
+.abouttext {
+	padding-top: 0px;
+	padding-bottom: 10px;
+	-webkit-box-ordinal-group: 4;
+	-webkit-order: 3;
+	-ms-flex-order: 3;
+	order: 3;
+	font-family: Raleway, sans-serif;
+	color: #fff;
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: 300;
+}
+
+.div-block-2 {
+	padding-bottom: 40px;
 }
 
 @media screen and (max-width: 991px) {
@@ -2310,15 +2372,15 @@ textarea.w-select {
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
-		padding-top: 40px;
+		padding-top: 100px;
 	}
 
-	.text-block-4 {
+	.headertext {
 		display: block;
-		margin-top: 20px;
-		margin-bottom: 30px;
+		margin-top: 0px;
+		margin-bottom: 0px;
 		font-size: 50px;
-		line-height: 70px;
+		line-height: 60px;
 	}
 
 	.footer {
@@ -2330,16 +2392,30 @@ textarea.w-select {
 		font-size: 40px;
 		line-height: 40px;
 	}
+
+	.div-block {
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+
+	.abouttext {
+		font-size: 18px;
+		line-height: 35px;
+	}
+
+	.div-block-2 {
+		padding-bottom: 80px;
+	}
 }
 
 @media screen and (max-width: 767px) {
 	.section-2 {
-		padding-top: 0px;
+		padding-top: 140px;
 	}
 
-	.text-block-4 {
-		font-size: 30px;
-		line-height: 59px;
+	.headertext {
+		font-size: 36px;
+		line-height: 40px;
 	}
 
 	.footer {
@@ -2355,29 +2431,44 @@ textarea.w-select {
 		font-size: 35px;
 	}
 
-	.text-block-7 {
+	.div-block {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+
+	.text-block-1 {
 		font-size: 40px;
 		line-height: 10vh;
 	}
 
 	.resetlink {
-		font-size: 40px;
+		font-size: 14px;
+	}
+
+	.abouttext {
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	.div-block-2 {
+		padding-bottom: 100px;
 	}
 }
 
 @media screen and (max-width: 479px) {
 	.section-2 {
-		padding-top: 50px;
+		padding-top: 60px;
 	}
 
 	.text-block-3 {
 		margin-bottom: 60px;
 	}
 
-	.text-block-4 {
-		margin-bottom: 40px;
-		font-size: 25px;
-		line-height: 40px;
+	.headertext {
+		margin-bottom: 0px;
+		padding-bottom: 10px;
+		font-size: 36px;
+		line-height: 50px;
 	}
 
 	.footer {
@@ -2411,11 +2502,20 @@ textarea.w-select {
 		padding-left: 20px;
 	}
 
-	.text-block-7 {
+	.text-block-1 {
 		font-size: 30px;
 	}
 
 	.resetlink {
-		font-size: 30px;
+		font-size: 12px;
+	}
+
+	.abouttext {
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.div-block-2 {
+		padding-bottom: 60px;
 	}
 }
